@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <ipServeurBDD>172.18.58.86</ipServeurBDD>
+    <portServeurBDD>3306</portServeurBDD>
+    <nomBDD>controleurDeRondeSynchroLinux</nomBDD>    
+    <utilisateurBDD>ronde</utilisateurBDD>
+    <motDePasseBDD>toto</motDePasseBDD>
+    <ipServeurBDDAbonnes>172.18.58.86</ipServeurBDDAbonnes>
+    <portServeurBDDAbonnes>3306</portServeurBDDAbonnes>
+    <nomBDDAbonnes>abonnes</nomBDDAbonnes>
+    <utilisateurBDDAbonnes>ronde</utilisateurBDDAbonnes>
+    <motDePasseBDDAbonnes>toto</motDePasseBDDAbonnes>
+    <cheminImageClient></cheminImageClient>
+    <cheminDossierImages></cheminDossierImages>
+    <telephoneDefaut></telephoneDefaut>
+</configuration>

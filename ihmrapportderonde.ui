@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>IHMRapportDeRonde</class>
+ <widget class="QWidget" name="IHMRapportDeRonde">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1274</width>
+    <height>706</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>IHMRapportDeRonde</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>6</x>
+     <y>20</y>
+     <width>1234</width>
+     <height>644</height>
+    </rect>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>1</width>
+     <height>1</height>
+    </size>
+   </property>
+   <property name="tabShape">
+    <enum>QTabWidget::Rounded</enum>
+   </property>
+   <property name="currentIndex">
+    <number>7</number>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>50</width>
+     <height>50</height>
+    </size>
+   </property>
+   <widget class="QWidget" name="tab_gestionagents">
+    <attribute name="icon">
+     <iconset>
+      <normaloff>:/images/images/agentIcon.png</normaloff>:/images/images/agentIcon.png</iconset>
+    </attribute>
+    <attribute name="title">
+     <string>Gestion Agents</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="tab_gestionRondes">
+    <attribute name="icon">
+     <iconset>
+      <normaloff>:/images/images/rondeIcon.png</normaloff>:/images/images/rondeIcon.png</iconset>
+    </attribute>
+    <attribute name="title">
+     <string>Gestion rondes</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="tab_associationAR">
+    <attribute name="icon">
+     <iconset>
+      <normaloff>:/images/images/associationIcon.png</normaloff>:/images/images/associationIcon.png</iconset>
+    </attribute>
+    <attribute name="title">
+     <string>Association Agents/Rondes</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="tab_gestionPointeaux">
+    <attribute name="icon">
+     <iconset>
+      <normaloff>:/images/images/pointeauIcon.png</normaloff>:/images/images/pointeauIcon.png</iconset>
+    </attribute>
+    <attribute name="title">
+     <string>Gestion Pointeaux</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="tab_synchronisation">
+    <attribute name="icon">
+     <iconset>
+      <normaloff>:/images/images/synchroIcon.png</normaloff>:/images/images/synchroIcon.png</iconset>
+    </attribute>
+    <attribute name="title">
+     <string>Synchronisation</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="tab_rapport">
+    <attribute name="icon">
+     <iconset>
+      <normaloff>:/images/images/rapportIcon.png</normaloff>:/images/images/rapportIcon.png</iconset>
+    </attribute>
+    <attribute name="title">
+     <string>Rapport</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>10</y>
+       <width>1101</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Filtres :</string>
+     </property>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>1061</width>
+        <height>73</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <spacer name="horizontalSpacer_13">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Minimum</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>50</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <item>
+          <widget class="QLabel" name="labelNomAgent">
+           <property name="text">
+            <string>Nom de l'agent :</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEditAgent"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_11">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Minimum</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>50</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_6">
+         <item>
+          <widget class="QLabel" name="labelNomRonde">
+           <property name="text">
+            <string>Nom de la ronde :</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEditRonde"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_10">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Minimum</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>50</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_8">
+         <item>
+          <widget class="QLabel" name="labelDate">
+           <property name="text">
+            <string>Date :</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonDate">
+         <property name="text">
+          <string>--/--/----</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonDateFin">
+         <property name="text">
+          <string>--/--/----</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_9">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Minimum</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>50</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_12">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Minimum</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>5</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>120</y>
+       <width>601</width>
+       <height>371</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <spacer name="horizontalSpacer_5">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>10</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QTableWidget" name="tableWidgetRonde"/>
+      </item>
+      <item>
+       <widget class="QTableWidget" name="tableWidgetPointeaux"/>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_4">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>10</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QPushButton" name="pushButtonFermerPhoto">
+     <property name="geometry">
+      <rect>
+       <x>1140</x>
+       <y>110</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelPhoto">
+     <property name="geometry">
+      <rect>
+       <x>630</x>
+       <y>110</y>
+       <width>551</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QCalendarWidget" name="calendarWidget">
+     <property name="geometry">
+      <rect>
+       <x>810</x>
+       <y>90</y>
+       <width>272</width>
+       <height>199</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>71</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_8">
+      <item>
+       <spacer name="horizontalSpacer_7">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Maximum</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>5</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonRetour">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_8">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Maximum</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>5</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_4">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>520</y>
+       <width>1221</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <item>
+       <spacer name="horizontalSpacerGaucheBouton">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Preferred</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>450</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QPushButton" name="pushButtonGenererPDF">
+          <property name="text">
+           <string>Générer PDF</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButtonApercuPDF">
+          <property name="text">
+           <string>Aperçu pour impression</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="horizontalSpacerDroiteBouton">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Preferred</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>450</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QScrollArea" name="scrollAreaPhoto">
+     <property name="geometry">
+      <rect>
+       <x>630</x>
+       <y>410</y>
+       <width>551</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>549</width>
+        <height>79</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QCalendarWidget" name="calendarWidgetFin">
+     <property name="geometry">
+      <rect>
+       <x>930</x>
+       <y>90</y>
+       <width>272</width>
+       <height>171</height>
+      </rect>
+     </property>
+    </widget>
+    <zorder>layoutWidget_2</zorder>
+    <zorder>layoutWidget_3</zorder>
+    <zorder>layoutWidget_4</zorder>
+    <zorder>groupBox</zorder>
+    <zorder>labelPhoto</zorder>
+    <zorder>calendarWidget</zorder>
+    <zorder>pushButtonFermerPhoto</zorder>
+    <zorder>scrollAreaPhoto</zorder>
+    <zorder>calendarWidgetFin</zorder>
+   </widget>
+   <widget class="QWidget" name="tab">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <attribute name="icon">
+     <iconset>
+      <normaloff>:/images/images/graphicone.png</normaloff>:/images/images/graphicone.png</iconset>
+    </attribute>
+    <attribute name="title">
+     <string>Statistiques</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="tabEnvoieMail">
+    <attribute name="icon">
+     <iconset>
+      <normaloff>:/images/images/Logo_mail.png</normaloff>:/images/images/Logo_mail.png</iconset>
+    </attribute>
+    <attribute name="title">
+     <string>Mail</string>
+    </attribute>
+    <widget class="QListWidget" name="listWidget">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>100</y>
+       <width>921</width>
+       <height>321</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_8">
+     <property name="geometry">
+      <rect>
+       <x>119</x>
+       <y>430</y>
+       <width>921</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_9">
+      <item>
+       <widget class="QPushButton" name="pushButtonSupprimerAbonne">
+        <property name="text">
+         <string>Supprimer l'abonné séléctionné</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonValiderListe">
+        <property name="text">
+         <string>Valider liste</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>20</y>
+       <width>921</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QWidget" name="layoutWidget_7">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>30</y>
+        <width>381</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QComboBox" name="comboBoxListeAbonnees"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget_5">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>30</y>
+        <width>381</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Choisir la ronde</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBoxRondeASelectionner">
+         <property name="editable">
+          <bool>false</bool>
+         </property>
+         <property name="currentText">
+          <string comment="Choisir la ronde"/>
+         </property>
+         <property name="currentIndex">
+          <number>-1</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,32 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>images/agentIcon.png</file>
+        <file>images/ajouterIcon.png</file>
+        <file>images/alarme_incendie.jpeg</file>
+        <file>images/associationIcon.png</file>
+        <file>images/BarbeDevauxLogo.png</file>
+        <file>images/basIcon.png</file>
+        <file>images/basIcon2.png</file>
+        <file>images/boutonRetour.png</file>
+        <file>images/configuration.png</file>
+        <file>images/droiteIcon.png</file>
+        <file>images/duplicationIcon.png</file>
+        <file>images/gaucheIcon.png</file>
+        <file>images/graph1.png</file>
+        <file>images/graph2.png</file>
+        <file>images/graphicone.png</file>
+        <file>images/hautIcon.png</file>
+        <file>images/hautIcon2.png</file>
+        <file>images/logoAppareil.png</file>
+        <file>images/pdfIcon.png</file>
+        <file>images/pointeauIcon.png</file>
+        <file>images/porte_casse.jpg</file>
+        <file>images/rapportIcon.png</file>
+        <file>images/rondeIcon.png</file>
+        <file>images/saveIcon.png</file>
+        <file>images/supprIcon.png</file>
+        <file>images/supprIcon2.png</file>
+        <file>images/synchroIcon.png</file>
+        <file>images/Logo_mail.png</file>
+    </qresource>
+</RCC>
